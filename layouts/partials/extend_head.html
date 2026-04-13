@@ -1,0 +1,18 @@
+<script>
+    (function () {
+        // Check if the user has already manually selected a theme preference
+        const savedTheme = localStorage.getItem('pref-theme');
+
+        if (!savedTheme) {
+            const currentHour = new Date().getHours();
+            // Define night time as 7:00 PM (19) to 7:00 AM (7)
+            const isNightTime = currentHour >= 19 || currentHour < 7;
+
+            if (isNightTime) {
+                document.body.className = 'dark';
+            } else {
+                document.body.className = 'light';
+            }
+        }
+    })();
+</script>

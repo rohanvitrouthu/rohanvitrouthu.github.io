@@ -1,0 +1,28 @@
+baseURL = 'https://rohanvitrouthu.github.io/'
+languageCode = 'en-us'
+title = 'My Portfolio'
+theme = 'PaperMod'
+
+[params]
+  # PaperMod specific settings
+  defaultTheme = "auto" # We will override this dynamically with our script
+  ShowThemeToggle = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 30
